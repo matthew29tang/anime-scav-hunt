@@ -28,15 +28,7 @@ class Home extends React.Component {
     const { classes } = this.props;
 
     // Standardized inline styles to guarantee matching dimensions
-    const imgStyle = {
-      width: '100%',
-      maxWidth: '300px',
-      height: '167px',
-      objectFit: 'cover', // Crops/centers without distortion
-      display: 'block',
-      backgroundColor: '#f0f0f0', // Gray box placeholder structure if it takes time to load
-      objectPosition: '50% 20%',
-    };
+    
 
     return (
       <div className="Home">
@@ -55,8 +47,40 @@ class Home extends React.Component {
                 alignItems="center"
                 justify="center"
               >
-                {teams.map(team =>
-                  <Grid item xs={12} sm={6} md={3} key={1}>
+                {teams.map(team => {
+                  let imgStyle = {
+                    width: '100%',
+                    maxWidth: '300px',
+                    height: '167px',
+                    objectFit: 'cover', // Crops/centers without distortion
+                    display: 'block',
+                    backgroundColor: '#f0f0f0', // Gray box placeholder structure if it takes time to load
+                    objectPosition: '50% 20%',
+                  };
+                  if (q === 1 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 53%'
+                  } else if (q === 4 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 50%'
+                  } else if (q === 8 && team === 2) {
+                    imgStyle['objectPosition'] =  '50% 23%'
+                  } else if (q === 8 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 23%'
+                  } else if (q === 14 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 50%'
+                  } else if (q === 15 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 50%'
+                  } else if (q === 18 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 90%'
+                  } else if (q === 19 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 50%'
+                  } else if (q === 20 && team === 2) {
+                    imgStyle['objectPosition'] =  '50% 10%'
+                  } else if (q === 22 && team === 3) {
+                    imgStyle['objectPosition'] =  '50% 57%'
+                  } else if (q === 24 && team === 2) {
+                    imgStyle['objectPosition'] =  '50% 5%'
+                  }
+                  return <Grid item xs={12} sm={6} md={3} key={1}>
                         <Paper className={classes.paper}>
                           <h3 style={{ marginTop: "0px" }}>Team {team}</h3>
                           <img 
@@ -69,6 +93,7 @@ class Home extends React.Component {
                           <h3 style={{ marginBottom: "0px" }}>{formattedData[team-1][q-1][1] ? formattedData[team-1][q-1][1] : "No Submission"}</h3>
                         </Paper>
                     </Grid>
+                }
                 )}
               </Grid>
             </Paper>
