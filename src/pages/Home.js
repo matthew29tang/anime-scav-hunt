@@ -84,7 +84,7 @@ class Home extends React.Component {
                         <Paper className={classes.paper}>
                           <h3 style={{ marginTop: "0px" }}>Team {team}</h3>
                           <img 
-                            src={"/img/" + formattedData[team-1][q-1][0]} 
+                            src={`${process.env.PUBLIC_URL}/img/` + formattedData[team-1][q-1][0]} 
                             style={imgStyle}
                             onError={this.handleImageError}
                             alt={`q${q}-team${team}`}
