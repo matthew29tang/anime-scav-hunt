@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/anime-scav-hunt/precache-manifest.4fad75120e8e8c1c3a284bbcec11716b.js"
+  "/anime-scav-hunt/precache-manifest.6c02733ffe770c1de529c0510748e265.js"
 );
 
 self.addEventListener('message', (event) => {

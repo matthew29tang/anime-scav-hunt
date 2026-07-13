@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "073d85f3da22aa65b7307f12a5d5f335",
+    "revision": "9bfd1c579b3f48d51eef1ff43ce7a59b",
     "url": "/anime-scav-hunt/index.html"
   },
   {
-    "revision": "d212b363dec95d712b53",
+    "revision": "7323d7623741964e0461",
     "url": "/anime-scav-hunt/static/css/main.55805575.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/anime-scav-hunt/static/js/2.6c6507cb.chunk.js"
   },
   {
-    "revision": "d212b363dec95d712b53",
-    "url": "/anime-scav-hunt/static/js/main.59442cf4.chunk.js"
+    "revision": "7323d7623741964e0461",
+    "url": "/anime-scav-hunt/static/js/main.76258f83.chunk.js"
   },
   {
     "revision": "a0acc192b2d03a74a26b",
